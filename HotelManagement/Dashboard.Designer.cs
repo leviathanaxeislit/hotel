@@ -28,96 +28,125 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnEmployee = new System.Windows.Forms.Button();
+            this.btnCustomerDetails = new System.Windows.Forms.Button();
+            this.btnCheckout = new System.Windows.Forms.Button();
+            this.btnCustomerReg = new System.Windows.Forms.Button();
+            this.btnAddRoom = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.uC_AddRoom1 = new HotelManagement.All_User_Control.UC_AddRoom();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnEmployee);
+            this.panel1.Controls.Add(this.btnCustomerDetails);
+            this.panel1.Controls.Add(this.btnCheckout);
+            this.panel1.Controls.Add(this.btnCustomerReg);
+            this.panel1.Controls.Add(this.btnAddRoom);
             this.panel1.Location = new System.Drawing.Point(69, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(814, 126);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnEmployee
+            // 
+            this.btnEmployee.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEmployee.Location = new System.Drawing.Point(651, 35);
+            this.btnEmployee.Name = "btnEmployee";
+            this.btnEmployee.Size = new System.Drawing.Size(154, 66);
+            this.btnEmployee.TabIndex = 6;
+            this.btnEmployee.Text = "Employee";
+            this.btnEmployee.UseVisualStyleBackColor = true;
+            // 
+            // btnCustomerDetails
+            // 
+            this.btnCustomerDetails.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCustomerDetails.Location = new System.Drawing.Point(491, 35);
+            this.btnCustomerDetails.Name = "btnCustomerDetails";
+            this.btnCustomerDetails.Size = new System.Drawing.Size(154, 66);
+            this.btnCustomerDetails.TabIndex = 5;
+            this.btnCustomerDetails.Text = "Customer Details";
+            this.btnCustomerDetails.UseVisualStyleBackColor = true;
+            // 
+            // btnCheckout
+            // 
+            this.btnCheckout.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCheckout.Location = new System.Drawing.Point(340, 35);
+            this.btnCheckout.Name = "btnCheckout";
+            this.btnCheckout.Size = new System.Drawing.Size(145, 66);
+            this.btnCheckout.TabIndex = 4;
+            this.btnCheckout.Text = "Check Out";
+            this.btnCheckout.UseVisualStyleBackColor = true;
+            // 
+            // btnCustomerReg
+            // 
+            this.btnCustomerReg.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCustomerReg.Location = new System.Drawing.Point(185, 35);
+            this.btnCustomerReg.Name = "btnCustomerReg";
+            this.btnCustomerReg.Size = new System.Drawing.Size(149, 66);
+            this.btnCustomerReg.TabIndex = 3;
+            this.btnCustomerReg.Text = "Customer Reg";
+            this.btnCustomerReg.UseVisualStyleBackColor = true;
+            this.btnCustomerReg.Click += new System.EventHandler(this.btnCustomerReg_Click);
+            // 
+            // btnAddRoom
+            // 
+            this.btnAddRoom.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAddRoom.Location = new System.Drawing.Point(21, 35);
+            this.btnAddRoom.Name = "btnAddRoom";
+            this.btnAddRoom.Size = new System.Drawing.Size(158, 66);
+            this.btnAddRoom.TabIndex = 2;
+            this.btnAddRoom.Text = "Add Room";
+            this.btnAddRoom.UseVisualStyleBackColor = true;
+            this.btnAddRoom.Click += new System.EventHandler(this.btnAddRoom_Click);
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(69, 164);
+            this.panel2.Controls.Add(this.uC_AddRoom1);
+            this.panel2.Location = new System.Drawing.Point(0, 144);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(814, 403);
+            this.panel2.Size = new System.Drawing.Size(1200, 564);
             this.panel2.TabIndex = 1;
             // 
-            // button1
+            // uC_AddRoom1
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(21, 35);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(158, 66);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Add Room";
-            this.button1.UseVisualStyleBackColor = true;
+            this.uC_AddRoom1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uC_AddRoom1.BackColor = System.Drawing.Color.White;
+            this.uC_AddRoom1.Location = new System.Drawing.Point(69, -9);
+            this.uC_AddRoom1.Name = "uC_AddRoom1";
+            this.uC_AddRoom1.Size = new System.Drawing.Size(942, 538);
+            this.uC_AddRoom1.TabIndex = 0;
+            this.uC_AddRoom1.Visible = false;
+            this.uC_AddRoom1.Load += new System.EventHandler(this.uC_AddRoom1_Load_1);
             // 
-            // button2
+            // guna2Elipse1
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(185, 35);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(149, 66);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Customer Reg";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(340, 35);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(145, 66);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Check Out";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(491, 35);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(154, 66);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Customer Details";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button5.Location = new System.Drawing.Point(651, 35);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(154, 66);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Employee";
-            this.button5.UseVisualStyleBackColor = true;
+            this.guna2Elipse1.BorderRadius = 30;
+            this.guna2Elipse1.TargetControl = this.panel2;
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(952, 579);
+            this.ClientSize = new System.Drawing.Size(1199, 696);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Dashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -125,11 +154,13 @@
         #endregion
 
         private Panel panel1;
-        private Button button5;
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private Button button1;
+        private Button btnEmployee;
+        private Button btnCustomerDetails;
+        private Button btnCheckout;
+        private Button btnCustomerReg;
+        private Button btnAddRoom;
         private Panel panel2;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private All_User_Control.UC_AddRoom uC_AddRoom1;
     }
 }
